@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #333; /* Dark background color */
+    color: #fff; /* Light text color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #444; /* Darker container background color */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    display: flex;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #666; /* Darker border color */
+    border-radius: 5px;
+    background-color: #555; /* Slightly lighter input background */
+    color: #fff; /* Light text color */
+}
+
+button {
+    padding: 10px;
+    background-color: #28a745; /* Green button color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+li {
+    background-color: #666; /* Darker list item background */
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li.completed {
+    text-decoration: line-through;
+    color: #888; /* Lighter text for completed tasks */
+}
+
+button.delete {
+    background-color: #dc3545; /* Red delete button color */
+    margin-left: 10px;
+}
+
+button.delete:hover {
+    background-color: #c82333; /* Darker red on hover */
+}
+
+button#clear-completed {
+    margin-top: 20px;
+    background-color: #948148; /* Brown clear button color */
+    width: 100%;
+}
+
+button#clear-completed:hover {
+    background-color: rgba(224, 168, 0, 0.219); /* Lighter brown on hover */
+}
+
+@media (max-width: 400px) {
+    .container {
+        width: 90%;
+    }
+
+    .input-group {
+        flex-direction: column;
+    }
+
+    button {
+        margin: 10px 0 0 0;
+        width: 100%;
+    }
+}
